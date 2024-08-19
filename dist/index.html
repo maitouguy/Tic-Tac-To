@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header
+      class="absolute left-1 right-1 top-1 h-12 bg-red-400 flex items-center justify-center"
+    >
+      <p class="text-white text-xl font-bold italic">
+        Tic Tac <span class="text-red-600">To</span>
+      </p>
+    </header>
+    <form
+      class="pop w-[400px] px-2 py-5 bg-red-400 mr-auto ml-auto mt-[200px] shadow-xl flex items-center flex-col gap-2"
+      action="script.js"
+      method="post"
+    >
+      <label class="w-full" for="difficulty">Choose Difficulty</label>
+      <select name="difficulty" id="difficulty" class="block w-full">
+        <option value="1">Easy</option>
+        <option value="2">Medium</option>
+        <option value="3">Hard</option>
+      </select>
+      <br />
+      <p class="w-full">Choose Your Player</p>
+      <div class="flex justify-between px-24 w-full">
+        <div>
+          <input type="radio" name="player" id="playerX" checked />
+          <label for="playerX">X</label>
+        </div>
+        <div>
+          <input type="radio" name="player" id="playerO" />
+          <label for="playerO">O</label>
+        </div>
+      </div>
+      <button type="submit" class="bg-red-300 h-8 w-3/5 rounde-md">Play</button>
+    </form>
+    <div class="playground">
+      <h2 class="text-white text-xl font-bold">Play</h2>
+      <div class="shadow-xl">
+        <button></button><button></button><button></button><button></button
+        ><button></button><button></button><button></button><button></button
+        ><button></button>
+      </div>
+    </div>
+  </body>
+</html>
